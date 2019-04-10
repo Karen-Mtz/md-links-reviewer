@@ -1,6 +1,7 @@
 let markdownLinkExtractor = require('markdown-link-extractor');
 const counting = require("./counting");
 const validating = require("./validating");
+let fs = require('fs')
 
 /*
 RECIBIENDO RUTA DE ARCHIVO
@@ -19,11 +20,11 @@ const readingFiles = (mdRoute) => {
     let links = markdownLinkExtractor(content);
     links.forEach((link) => {
       if (process.argv[3] === "--validate") {
-        validating(link);
+        validating.validating(link);
       }
     });
     if (process.argv[3] === "--stats") {
-      counting(links);
+      counting.counting(links);
     }
   });
 };

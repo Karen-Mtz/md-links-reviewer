@@ -1,5 +1,5 @@
 let fs = require('fs');
-let path = require('path');
+let path = require('path')
 const arg = require("./index");
 const readingFiles = require("./readingFiles");
 
@@ -8,6 +8,7 @@ RECIBIENDO ARGUMENDOS DE LA LÍNEA DE COMANDO:
 FUNCIÓN QUE IDENTIFICA SI LA RUTA INGRESADA EN CLI
 ES DE UN ARCHIVO O DE UN DIRECTORIO:
 */
+
 
 const gettingPath = (arg) => {
   let mdFiles = [];
@@ -21,17 +22,18 @@ const gettingPath = (arg) => {
       // console.log(files)
       files.forEach(file => {
         if (path.extname(file) === ".md") {
-          mdFiles.push(path.join(arg, file));
+          readingFiles.readingFiles(file);
         }
       });
-      readingFiles(mdFiles.toString());
+      readingFiles.readingFiles(mdFiles.toString());
       return mdFiles;
       // console.log(mdFiles)
     }
     else {
-      readingFiles(arg);
+      readingFiles.readingFiles(arg);
       return arg;
     }
   });
 };
 
+module.exports.gettingPath = gettingPath
