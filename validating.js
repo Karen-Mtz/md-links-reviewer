@@ -10,9 +10,9 @@ const validating = (link) => {
   fetch(link)
     .then(res => {
       if(res.status == 404) {
-        console.log(chalk.red('\n' + res.statusText + " " + res.status) + chalk.blue(" " + res.url) + " " + '\n' + "FILE: " + arg)
+        console.log(chalk.red(res.statusText + " " + res.status) + chalk.blue(" " + res.url) + " " + '\n' + "FILE: " + arg)
       } else {
-      console.log(chalk.green('\n' + res.statusText + " " + res.status) + chalk.blue(" " + res.url) + " " + '\n' + "FILE: " + arg)
+      console.log(chalk.green(res.statusText + " " + res.status) + chalk.blue(" " + res.url) + " " + '\n' + "FILE: " + arg)
     }
     //falta imprimir texto dentro del link
     });
