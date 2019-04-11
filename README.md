@@ -6,7 +6,7 @@
 
 Desde la consola:
 
- `npm install md-links-karen`
+ `npm install md-links-reviewer`
 
 Una vez instalado el módulo, desde tu consola ejecuta:
 
@@ -24,7 +24,7 @@ Para averiguar si el link funciona o no.
 Para averiguar la cantidad de links que existen en tu archivo .md 
 (retorna el total de urls encontradas)
 
-###Proceso:
+### Proceso:
 
-[DIAGRAMA] (https://drive.google.com/file/d/1xujI5KITeFjozrCZF89EMmJ7SPy1FNiv/view?usp=sharing)
-[BOARD] (https://github.com/Karen-Mtz/CDMX007-fe-md-links/projects/1)
+[DIAGRAMA](https://drive.google.com/file/d/1xujI5KITeFjozrCZF89EMmJ7SPy1FNiv/view?usp=sharing)
+[BOARD](https://github.com/Karen-Mtz/CDMX007-fe-md-links/projects/1)
