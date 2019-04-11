@@ -16,7 +16,7 @@ const gettingPath = (arg) => {
     if (err) {
       console.err(); //consolear error
       return;
-    }
+    } 
     if (stats.isDirectory() == true) {
       let files = fs.readdirSync(arg);
       // console.log(files)
