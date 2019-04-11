@@ -6,7 +6,7 @@
 
 Desde la consola:
 
- `npm install md-links-reviewer`
+ `npm i md-links-reviewer`
 
 Una vez instalado el módulo, desde tu consola ejecuta:
 
